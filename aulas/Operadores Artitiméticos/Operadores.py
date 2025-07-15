@@ -40,13 +40,30 @@ Ordem de precedencia das operações matemáticas:
 -----------------------------------------------------
 
 """
+
 main = tk.Tk()
 
-label = tk.Label(main, text="Calculadora")
-label.place(x=0, y=0)
+def somar(n1, n2):
+    n1 = int(n1)
+    n2 = int(n2)
+    resultado = tk.Label(main, text= f'O Resultado é : {n1 + n2}')
+    resultado.place(x=10, y=100)
 
-entry = tk.Entry(main)
-entry.place(x=0, y=20)
+label_primeiro = tk.Label(main, text="Primeiro Número:")
+label_primeiro.place(x=10, y=0)
+
+entry_primeiro = tk.Entry(main)
+entry_primeiro.place(x=10, y=20)
+
+label_segundo = tk.Label(main, text="Segundo Número:")
+label_segundo.place(x=150, y=0)
+
+entry_segundo = tk.Entry(main)
+entry_segundo.place(x=150, y=20)
+
+
+bt_soma = tk.Button(main, width=10, text= "Somar", command=lambda: somar(int(entry_primeiro.get()),int(entry_segundo.get()) ))
+bt_soma.place(x=10, y=50)
 
 
 main.mainloop()
