@@ -13,4 +13,25 @@ o valor do aumento;
 o novo salário, após o aumento.
 
 """
+salario = float(input("Digite seu salário: "))
+salario_ajustado = 0 
 
+if salario <=279.99:
+    ajuste = salario * 0.20
+    print(f'Seu salário era de: R${salario:.2f}')
+    print(f'Seu salário vai ter um ajuste de 20% (R${ajuste:.2f}) e passará para: R${salario+ajuste:.2f}')
+    
+elif salario >=280.00 and salario <= 700.00:
+    ajuste = salario * 0.15
+    print(f'Seu salário era de: R${salario:.2f}')
+    print(f'Seu salário vai ter um ajuste de 15% (R${ajuste:.2f}) e passará para: R${salario+ajuste:.2f}')
+
+elif salario >=700.00 and salario <= 1499.99:
+    ajuste = salario * 0.10
+    print(f'Seu salário era de: R${salario:.2f}')
+    print(f'Seu salário vai ter um ajuste de 10% (R${ajuste:.2f}) e passará para: R${salario+ajuste:.2f}')
+
+elif salario >=1500.00 :
+    ajuste = salario * 0.05
+    print(f'Seu salário era de: R${salario:.2f}')
+    print(f'Seu salário vai ter um ajuste de 5% (R${ajuste:.2f}) e passará para: R${salario+ajuste:.2f}')
