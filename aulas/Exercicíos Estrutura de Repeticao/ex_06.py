@@ -7,11 +7,11 @@ lista_numero = []
 
 while numero < 20:
     numero = numero + 1
+    lista_numero.append(numero)
     print(numero)
 
-
 while numero < 20:
-    lista_numero.append()
+    numero = numero + 1
+    lista_numero.append(numero)
 
-for n in lista_numero:
-    print(f'{numero[0]}',numero[2],numero[3],numero[4],numero[5],numero[6],numero[7],numero[8],numero[9],numero[10],numero[11],numero[12],numero[13])
+print(str(lista_numero).replace(']','').replace('[',''))
