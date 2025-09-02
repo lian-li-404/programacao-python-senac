@@ -1,0 +1,37 @@
+#total {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#topo {
+    width: 960px;
+    background-color: gainsboro;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+#logo-titulo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px; 
+}
+
+#titulo h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    margin: 0;
+}
+
+#banner {
+    width: 960px;
+    height: 300px;
+    margin: auto;
+    padding: 20px 0;
+    background-image: url('../img/banner.png');
+    opacity: 0.5; 
+}
